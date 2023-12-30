@@ -13,8 +13,9 @@ class HomeScreen extends StatelessWidget {
           Container(
             decoration: const BoxDecoration(
                 color: Colors.indigo,
-                borderRadius:
-                    BorderRadius.only(bottomRight: Radius.circular(50))),
+                borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(0),
+                )),
             child: Column(
               children: [
                 const SizedBox(
@@ -54,9 +55,11 @@ class HomeScreen extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 30),
               decoration: const BoxDecoration(
                   color: Colors.white,
-                  borderRadius:
-                      BorderRadius.only(topLeft: Radius.circular(100))),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(50),
+                      topRight: Radius.circular(50))),
               child: GridView.count(
+                physics: NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 crossAxisCount: 2,
                 mainAxisSpacing: 30,
