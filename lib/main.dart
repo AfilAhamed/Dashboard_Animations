@@ -1,4 +1,5 @@
 import 'package:dashboard_ui_animations/view/home_screen/home_screen.dart';
+import 'package:dashboard_ui_animations/view/widgets/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }
